@@ -18,15 +18,16 @@ class ButtonsZone extends React.Component {
           >
             <span>÷</span>
           </div>
-          <div className="number" onClick={() => this.props.onClick(1)}>
-            <span>1</span>
+          <div className="number" onClick={() => this.props.onClick(7)}>
+            <span>7</span>
           </div>
-          <div className="number" onClick={() => this.props.onClick(2)}>
-            <span>2</span>
+          <div className="number" onClick={() => this.props.onClick(8)}>
+            <span>8</span>
           </div>
-          <div className="number" onClick={() => this.props.onClick(3)}>
-            <span>3</span>
+          <div className="number" onClick={() => this.props.onClick(9)}>
+            <span>9</span>
           </div>
+
           <div
             className="operation"
             id="multiplication"
@@ -50,14 +51,14 @@ class ButtonsZone extends React.Component {
           >
             <span>-</span>
           </div>
-          <div className="number" onClick={() => this.props.onClick(7)}>
-            <span>7</span>
+          <div className="number" onClick={() => this.props.onClick(1)}>
+            <span>1</span>
           </div>
-          <div className="number" onClick={() => this.props.onClick(8)}>
-            <span>8</span>
+          <div className="number" onClick={() => this.props.onClick(2)}>
+            <span>2</span>
           </div>
-          <div className="number" onClick={() => this.props.onClick(9)}>
-            <span>9</span>
+          <div className="number" onClick={() => this.props.onClick(3)}>
+            <span>3</span>
           </div>
           <div
             className="operation"
