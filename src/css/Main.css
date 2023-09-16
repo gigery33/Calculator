@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  color: white;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: rgb(57, 57, 57);
+  height: 100%;
+  width: 100%;
+}
+#root {
+  height: 100%;
+}
+#App {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(32, 32, 33);
+  display: flex;
+  flex-direction: column;
+}
+#countDisplay {
+  flex-basis: 33%;
+  background-color: rgb(72, 72, 73);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+#buttonsZone {
+  flex-basis: 66%;
+  background-color: rgb(32, 32, 33);
+  display: flex;
+  flex-direction: row;
+  max-height: 100%;
+  justify-content: space-between;
+  width: 95%;
+  align-self: center;
+}
+#operations {
+  flex-basis: 25%;
+}
+#numbers {
+  flex-basis: 100%;
+}
+#numbers {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+#operations {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+.number {
+  height: 17%;
+  flex-basis: 23%;
+  background-color: rgb(53, 53, 53);
+  border-radius: 50px;
+  position: relative;
+}
+.number:active {
+  background-color: rgb(83, 83, 83);
+  transition: 0.08s linear;
+}
+.operation {
+  height: 17%;
+  border-radius: 50px;
+  background-color: rgb(95, 96, 110);
+  flex-basis: 23%;
+  position: relative;
+}
+.operation:active {
+  background-color: rgb(47, 49, 62);
+  transition: 0.08s linear;
+}
+#clear {
+  flex-basis: 73%;
+  background-color: rgb(119, 70, 138);
+}
+#clear:active {
+  background-color: rgb(82, 48, 95);
+  transition: 0.08s linear;
+}
+#zero {
+  flex-basis: 48%;
+}
+#equals {
+  background-color: #2562be;
+}
+#equals:active {
+  background-color: #1a4483;
+  transition: 0.08s linear;
+}
+
+.number span,
+.operation span {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+#cursor {
+  height: 100%;
+  width: 2px;
+  background-color: rgb(98, 208, 252);
+  margin-right: 20px;
+  opacity: 1;
+  animation-name: opacityOn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes opacityOn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacityOff {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.displayItems {
+  flex-basis: 40%;
+}
+#empty {
+  flex-basis: 20%;
+}
+#calcInput {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#calcInput span {
+  font-size: 100px;
+  align-self: center;
+  color: #e2e2e2;
+}
+#result {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#result span {
+  color: #c6c6c6;
+  font-size: 60px;
+  padding-right: 30px;
+}
