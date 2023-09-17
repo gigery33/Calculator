@@ -14,7 +14,7 @@ class ButtonsZone extends React.Component {
           <div
             className="operation"
             id="divide"
-            onClick={() => this.props.onClick("/")}
+            onClick={() => this.props.onClick("÷")}
           >
             <span>÷</span>
           </div>
@@ -31,7 +31,7 @@ class ButtonsZone extends React.Component {
           <div
             className="operation"
             id="multiplication"
-            onClick={() => this.props.onClick("*")}
+            onClick={() => this.props.onClick("×")}
           >
             <span>×</span>
           </div>

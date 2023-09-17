@@ -5,7 +5,7 @@ import ButtonsZone from "./components/buttons-zone";
 class Calculator extends React.Component {
   state = { calc: "", result: "" };
 
-  mathCharacters = ["+", "-", "/", "*"];
+  mathCharacters = ["+", "-", "/", "*", "×", "÷"];
 
   onClick = (num) => {
     try {
